@@ -1,0 +1,17 @@
+# Archivos de registros y logs
+*.log
+logs/
+
+# Temporales de Java / Maven / Gradle
+target/
+build/
+.gradle/
+
+# Temporales de Node / Playwright
+node_modules/
+playwright-report/
+test-results/
+
+# Archivos de Jenkins y del sistema
+.jenkins/
+.DS_Store
