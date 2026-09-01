@@ -13,7 +13,9 @@ pipeline {
         stage('Test Backend (Java / Maven)') {
             steps {
                 echo '=== Ejecutando pruebas unitarias y de API Backend ==='
-                sh 'mvn test'
+                dir('java-rest-assured') {
+                    sh 'export PATH="/opt/homebrew/bin:/usr/local/bin:$PATH" && mvn test'
+                }
             }
         }
 
