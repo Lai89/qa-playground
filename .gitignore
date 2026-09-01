@@ -1,17 +1,14 @@
-# Archivos de registros y logs
-*.log
-logs/
+# Archivos de documentación no deseados
+README.md
 
-# Temporales de Java / Maven / Gradle
-target/
-build/
-.gradle/
-
-# Temporales de Node / Playwright
-node_modules/
-playwright-report/
-test-results/
-
-# Archivos de Jenkins y del sistema
-.jenkins/
+# Archivos del sistema y editor
 .DS_Store
+.vscode/
+
+# Ignorar en cualquier nivel del proyecto
+**/target/
+**/build/
+**/node_modules/
+**/playwright-report/
+**/test-results/
+*.log
